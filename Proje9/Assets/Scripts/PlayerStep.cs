@@ -4,29 +4,28 @@ using UnityEngine;
 
 public class PlayerStep : MonoBehaviour
 {
-    public AudioClip[] footSteps;
-    public AudioSource audioSource;
-    public CharacterController controller;
-    private float footStepThesHold = 0.3f;
-    private float footStepRate = 0.5f;
-    private float lastFootStepTime;
+    public GameObject footStep;
     void Start()
     {
-        
+       
     }
     void Update()
     {
-        
-    }
-    private void FixedUpdate()
-    {
-        if (controller.velocity.magnitude > footStepThesHold)
+        if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))
         {
-            if (Time.time - lastFootStepTime > footStepRate) 
-            {
-                lastFootStepTime = Time.time;
-                audioSource.PlayOneShot(footSteps[Random.Range(0, footSteps.Length)]);
-            }
+            FootSteps();
         }
+        else
+        {
+            StopFootSteps();
+        }
+    }
+    public void FootSteps()
+    {
+        footStep.SetActive(true);
+    }
+    public void StopFootSteps()
+    {
+        footStep.SetActive(false);
     }
 }
