@@ -348,7 +348,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Crickets.cs"
-"Assets/Scripts/MouseLook.cs"
 "Assets/Scripts/MusicZone.cs"
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/PlayerStep.cs"
