@@ -58,6 +58,6 @@ public class SoundControl : MonoBehaviour
     public void UpdateSFXVolume()
     {
         audioMixer.SetFloat("SFXVolume", SFXSlider.value);
-        PlayerPrefs.SetFloat("SFXterVolume", SFXSlider.value);
+        PlayerPrefs.SetFloat("SFXVolume", SFXSlider.value);
     }
 }
