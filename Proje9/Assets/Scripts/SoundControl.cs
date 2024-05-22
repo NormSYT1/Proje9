@@ -4,9 +4,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+
 public class SoundControl : MonoBehaviour
 {
-
     public AudioMixer audioMixer;
     public GameObject window;
     public Slider masterSlider, musicSlider, SFXSlider;

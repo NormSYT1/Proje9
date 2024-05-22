@@ -13,7 +13,6 @@ public class PlayerMove : MonoBehaviour
     private float maxXrotation = +80f;
     private float minXrotation = -80f;
     private float currentXrotation;
-
     void Start()
     {
         
@@ -25,7 +24,6 @@ public class PlayerMove : MonoBehaviour
         float zMove = Input.GetAxis("Vertical");
         Vector3 move = transform.right * xMove + transform.forward * zMove;
         characterController.Move(move * speed * Time.deltaTime);
-
         characterController.Move(velocity * Time.deltaTime);
 
         //Fare hareket
